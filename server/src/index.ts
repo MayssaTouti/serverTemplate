@@ -7,31 +7,31 @@ import { schema } from "./Schema";
 
 
 
-const main = async ()=>{
-    await createConnection({
-    type: "postgres", 
-    port:5432,
-    host: "192.168.100.241",
-    database:"bd_p04_dev", 
-    username:"sa_p04", 
-    password: "9pL7K3vLd", 
-    logging: true, 
-    synchronize: true, 
-    entities: [Role_Users],
-}); 
-
 // const main = async ()=>{
 //     await createConnection({
 //     type: "postgres", 
 //     port:5432,
-//     host: "localhost",
-//     database:"graphqlcrud", 
-//     username:"postgres", 
-//     password: "bd", 
+//     host: "192.168.100.241",
+//     database:"bd_p04_dev", 
+//     username:"sa_p04", 
+//     password: "9pL7K3vLd", 
 //     logging: true, 
 //     synchronize: true, 
 //     entities: [Role_Users],
 // }); 
+
+const main = async ()=>{
+    await createConnection({
+    type: "postgres", 
+    port:5432,
+    host: "localhost",
+    database:"graphqlcrud", 
+    username:"postgres", 
+    password: "bd", 
+    logging: true, 
+    synchronize: true, 
+    entities: [Role_Users],
+}); 
 
 
 
