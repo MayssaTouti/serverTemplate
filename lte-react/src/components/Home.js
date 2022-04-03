@@ -318,11 +318,8 @@ const home = () => {
               </h3>
               <div className="card-tools">
                 <ul className="pagination pagination-sm">
-                  <li className="page-item"><a href="#" className="page-link">«</a></li>
-                  <li className="page-item"><a href="#" className="page-link">1</a></li>
-                  <li className="page-item"><a href="#" className="page-link">2</a></li>
-                  <li className="page-item"><a href="#" className="page-link">3</a></li>
-                  <li className="page-item"><a href="#" className="page-link">»</a></li>
+               
+                
                 </ul>
               </div>
             </div>

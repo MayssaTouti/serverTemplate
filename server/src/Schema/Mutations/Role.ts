@@ -31,10 +31,10 @@ export const DELETE_ROLE = {
 
     }, 
     async resolve(parent: any , args: any ){
-   const id=args.id_Role ; 
-    await Role_Users.delete(id); 
-     return  "ok"; 
-     //return { successful: true, message:" role deleted avec success"}; 
+   const id_Role=args.id_Role ; 
+    await Role_Users.delete(id_Role); 
+    
+     return { successful: true, message:" role deleted avec success"}; 
     }, 
 }; 
 
@@ -62,18 +62,10 @@ const search = await Role_Users.findOneBy({id_Role});
 
 if(search) {
     await Role_Users.update({id_Role  }, {role_name, role_description});
-    return "success";
+    return { successful: true , message: "Role Updated "}; 
+    
 
 }
-
-
-
-
 
 // })
-
-}
-
-
-
-}; 
+}}; 

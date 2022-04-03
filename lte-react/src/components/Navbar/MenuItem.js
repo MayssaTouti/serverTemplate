@@ -1,0 +1,36 @@
+//import React from "react"; 
+
+
+
+ export  const MenuItems= [
+{
+    title: 'Home', 
+    url: '#', 
+    cName: 'nav-links'
+
+}, 
+{
+    title: 'Services', 
+    url: '#', 
+    cName: 'nav-links'
+
+}, 
+{
+    title: 'Roles', 
+    url: '#', 
+    cName: 'nav-links'
+
+}, {
+    title: 'Contacts Us', 
+    url: '#', 
+    cName: 'nav-links'
+
+}, 
+{
+    title: 'Sign up ', 
+    url: '#', 
+    cName: 'nav-links-mobile'
+
+}
+
+]

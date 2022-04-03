@@ -1,25 +1,18 @@
 //import React from 'react'
-
+import { Link } from "react-router-dom"; 
 const SideNav = () => {
   return (
     <div>
 <aside className="main-sidebar sidebar-dark-primary elevation-4">
   {/* Brand Logo */}
   <a href="index3.html" className="brand-link">
-    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
-    <span className="brand-text font-weight-light">AdminLTE 3</span>
+    <img src="dist/img/wedo.jpg" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
+    <span className="brand-text font-weight-light">Wedo Consult </span>
   </a>
   {/* Sidebar */}
   <div className="sidebar">
     {/* Sidebar user panel (optional) */}
-    <div className="user-panel mt-3 pb-3 mb-3 d-flex">
-      <div className="image">
-        <img src="dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />
-      </div>
-      <div className="info">
-        <a href="#" className="d-block">Alexander Pierce</a>
-      </div>
-    </div>
+ 
     {/* SidebarSearch Form */}
     <div className="form-inline">
       <div className="input-group" data-widget="sidebar-search">
@@ -38,50 +31,40 @@ const SideNav = () => {
          with font-awesome or any other icon font library */}
         <li className="nav-item menu-open">
           <a href="#" className="nav-link active">
-            <i className="nav-icon fas fa-tachometer-alt" />
+            <i className="nav-icon fas fa-edit"/>
             <p>
-              Dashboard
-              <i className="right fas fa-angle-left" />
+              Gestion Role 
+          
             </p>
           </a>
           <ul className="nav nav-treeview">
             <li className="nav-item">
-              <a href="./index.html" className="nav-link active">
+              <a href="#" className="nav-link active">
                 <i className="far fa-circle nav-icon" />
-                <p>Dashboard v1</p>
+                <Link to='/addRole'> Add Role  </Link>
               </a>
             </li>
+         
+        
+          </ul>
+          <ul className="nav nav-treeview">
             <li className="nav-item">
-              <a href="./index2.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Dashboard v2</p>
+              <a href="#" className="nav-link active">
+                <i className="nav-icon fas fa-table" />
+                <Link to='/allOfRoles' > Liste of Roles  </Link>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="./index3.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Dashboard v3</p>
-              </a>
-            </li>
+         
+        
           </ul>
         </li>
-        <li className="nav-item">
-          <a href="pages/widgets.html" className="nav-link">
-            <i className="nav-icon fas fa-th" />
-            <p>
-              Widgets
-              <span className="right badge badge-danger">New</span>
-            </p>
-          </a>
-        </li>
+  
         <li className="nav-item">
           <a href="#" className="nav-link">
             <i className="nav-icon fas fa-copy" />
             <p>
-              Layout Options
-              <i className="fas fa-angle-left right" />
-              <span className="badge badge-info right">6</span>
-            </p>
+          <Link to='/Login' > Sign In </Link>
+                    </p>
           </a>
           <ul className="nav nav-treeview">
             <li className="nav-item">
@@ -149,24 +132,8 @@ const SideNav = () => {
                 <p>ChartJS</p>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="pages/charts/flot.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Flot</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/charts/inline.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Inline</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/charts/uplot.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>uPlot</p>
-              </a>
-            </li>
+          
+          
           </ul>
         </li>
         <li className="nav-item">
@@ -184,36 +151,7 @@ const SideNav = () => {
                 <p>General</p>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="pages/UI/icons.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Icons</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/UI/buttons.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Buttons</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/UI/sliders.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Sliders</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/UI/modals.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Modals &amp; Alerts</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/UI/navbar.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Navbar &amp; Tabs</p>
-              </a>
-            </li>
+    
             <li className="nav-item">
               <a href="pages/UI/timeline.html" className="nav-link">
                 <i className="far fa-circle nav-icon" />
@@ -380,36 +318,15 @@ const SideNav = () => {
                 <p>Projects</p>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="pages/examples/project-add.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Project Add</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/examples/project-edit.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Project Edit</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/examples/project-detail.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Project Detail</p>
-              </a>
-            </li>
+   
+         
             <li className="nav-item">
               <a href="pages/examples/contacts.html" className="nav-link">
                 <i className="far fa-circle nav-icon" />
                 <p>Contacts</p>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="pages/examples/faq.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>FAQ</p>
-              </a>
-            </li>
+       
             <li className="nav-item">
               <a href="pages/examples/contact-us.html" className="nav-link">
                 <i className="far fa-circle nav-icon" />
@@ -515,36 +432,9 @@ const SideNav = () => {
                 <p>Language Menu</p>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="pages/examples/404.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Error 404</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/examples/500.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Error 500</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/examples/pace.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Pace</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="pages/examples/blank.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Blank Page</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="starter.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Starter Page</p>
-              </a>
-            </li>
+           
+         
+         
           </ul>
         </li>
         <li className="nav-item">
@@ -577,96 +467,11 @@ const SideNav = () => {
             <p>Tabbed IFrame Plugin</p>
           </a>
         </li>
-        <li className="nav-item">
-          <a href="https://adminlte.io/docs/3.1/" className="nav-link">
-            <i className="nav-icon fas fa-file" />
-            <p>Documentation</p>
-          </a>
-        </li>
-        <li className="nav-header">MULTI LEVEL EXAMPLE</li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            <i className="fas fa-circle nav-icon" />
-            <p>Level 1</p>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            <i className="nav-icon fas fa-circle" />
-            <p>
-              Level 1
-              <i className="right fas fa-angle-left" />
-            </p>
-          </a>
-          <ul className="nav nav-treeview">
-            <li className="nav-item">
-              <a href="#" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Level 2</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>
-                  Level 2
-                  <i className="right fas fa-angle-left" />
-                </p>
-              </a>
-              <ul className="nav nav-treeview">
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="far fa-dot-circle nav-icon" />
-                    <p>Level 3</p>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="far fa-dot-circle nav-icon" />
-                    <p>Level 3</p>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="far fa-dot-circle nav-icon" />
-                    <p>Level 3</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Level 2</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            <i className="fas fa-circle nav-icon" />
-            <p>Level 1</p>
-          </a>
-        </li>
-        <li className="nav-header">LABELS</li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            <i className="nav-icon far fa-circle text-danger" />
-            <p className="text">Important</p>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            <i className="nav-icon far fa-circle text-warning" />
-            <p>Warning</p>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            <i className="nav-icon far fa-circle text-info" />
-            <p>Informational</p>
-          </a>
-        </li>
+     
+      
+       
+       
+      
       </ul>
     </nav>
     {/* /.sidebar-menu */}
